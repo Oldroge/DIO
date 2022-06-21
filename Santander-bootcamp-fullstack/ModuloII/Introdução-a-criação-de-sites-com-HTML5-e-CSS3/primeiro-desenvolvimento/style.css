@@ -1,6 +1,8 @@
 body {
   background-color: rgb(235, 229, 229);
   font-family: Verdana;
+  max-width: 900px;
+  margin: auto;
 }
 
 .photo-icon {
@@ -42,9 +44,11 @@ a {
   margin: 0px;
   margin-bottom: 10px;
   text-transform: capitalize;
+  text-align: justify;
 }
 
 .post-image {
+  width: 100%;
   margin-bottom: 15px;
 }
 
