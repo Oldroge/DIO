@@ -1,6 +1,6 @@
 # Módulo II - HTML5/CSS3/JavaScript
 
-- Introdução a criação de websites com HTML5 e CSS3
+- Introdução a criação de websites com HTML5 e CSS3 :heavy_check_mark:
 - Posicionando elementos com flexbox
 - Recriando a página inicial do instagram
 - Introdução ao JavaScript
