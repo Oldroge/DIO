@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="align.items.css">
+  <title>Introdução - align items</title>
+</head>
+<body>
+  <h1 class="title">ROW DIRECTION</h1>
+    <h3>Center</h3>
+      <p>Crescem todos os itens de acordo com o eixo central</p>
+        <section class="container center flex">
+          <div class="item">item 1</div>
+          <div class="item">Lorem ipsum dolor</div>
+          <div class="item">item 3</div>
+        </section>
+
+    <h3>Stretch</h3>
+      <p>Crescem todos os itens de acordo com o maior ítem</p>
+        <section class="container stretch flex">
+          <div class="item">item 1</div>
+          <div class="item">Lorem ipsum dolor</div>
+          <div class="item">item 3</div>
+        </section>
+
+    <h3>Flex start</h3>
+      <p>Vai fazer o relacionamento de acordo com a linha do container,</p>
+      <p>como está sendo feito em row, ele vai direcionar os elementos ao topo do container.</p>
+        <section class="container flex-start flex">
+          <div class="item">item 1</div>
+          <div class="item">Lorem ipsum dolor</div>
+          <div class="item">item 3</div>
+        </section>
+
+    <h3>Flex end</h3>
+        <p>Vai fazer o relacionamento de acordo com a linha do container,</p>
+        <p>como está sendo feito em row, ele vai direcionar os elementos para a parte de baixo do container.</p>
+          <section class="container flex-end flex">
+            <div class="item">item 1</div>
+            <div class="item">Lorem ipsum dolor</div>
+            <div class="item">item 3</div>
+          </section>
+      
+    <h3>Baseline</h3>
+          <p>A base da linha é o que vai posicionar o conteúdo de dentro da div</p>
+            <section class="container Baseline flex">
+              <div class="item"><br>item 1</div>
+              <div class="item">Lorem ipsum dolor</div>
+              <div class="item">item 3</div>
+            </section>
+    
+  <h1 class="title">COLUMN DIRECTION</h1>
+      <h3>Flex start</h3>
+        <p>Vai fazer o relacionamento de acordo com a linha do container,</p>
+        <p>como está sendo feito em column, ele vai direcionar os elementos ao início do container.</p>
+          <section class="container flex-start column">
+            <div class="item">item 1</div>
+            <div class="item">Lorem ipsum dolor</div>
+            <div class="item">item 3</div>
+          </section>
+
+    <h3>Flex end</h3>
+        <p>Vai fazer o relacionamento de acordo com a linha do container,</p>
+        <p>como está sendo feito em column, ele vai direcionar os elementos ao fim do container.</p>
+          <section class="container flex-end column">
+            <div class="item">item 1</div>
+            <div class="item">Lorem ipsum dolor</div>
+            <div class="item">item 3</div>
+          </section>
+
+    <h3>Center</h3>
+        <p>Crescem todos os itens de acordo com o eixo central</p>
+          <section class="container center column">
+            <div class="item">item 1</div>
+            <div class="item">Lorem ipsum dolor</div>
+            <div class="item">item 3</div>
+          </section>
+
+    <h3>Baseline</h3>
+        <p>A base da linha é o que vai posicionar o conteúdo de dentro da div</p>
+          <section class="container Baseline column">
+            <div class="item"><br>item 1</div>
+            <div class="item">Lorem ipsum dolor</div>
+            <div class="item">item 3</div>
+          </section>
+
+    <h3>Alinhamento central à tela</h3>
+    <section class="container central center">
+      <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugiat obcaecati quos cumque</div>
+    </section>
+</body>
+</html>
