@@ -1,0 +1,58 @@
+.title {
+  color: blueviolet;
+  font-size: 50px;
+}
+
+p, ul{
+  font-size:x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 600px;
+}
+
+.container {
+  display: flex;
+  max-width: 450px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-container {
+  align-items: center;
+
+}
+
+.items {
+  background-color: blueviolet;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
+}
+
+.center {
+  align-self: center;
+}
+
+.start {
+  align-self: flex-start;
+}
+
+.end {
+  align-self: flex-end;
+}
+
+.baseline {
+  align-self: baseline;
+}
+
+.stretch {
+  align-self: stretch;
+}
+
+.auto {
+  align-self: auto;
+}
