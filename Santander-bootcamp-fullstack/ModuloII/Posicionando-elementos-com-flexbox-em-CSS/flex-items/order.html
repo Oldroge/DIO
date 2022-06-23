@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="order.css">
+  <title>Introdução - ORDER</title>
+</head>
+<body>
+  <h1 class="title">ORDERS EM ROW</h1>
+    <h2 class="title">ORDER = 0</h2>
+    <p>O order por padrão já é setado em zero, então se observar, cada div não recebe alteração alguma mesmo com a classe order setada.</p>
+    <div class="container">
+      <div class="items order-0">A</div>
+      <div class="items order-0">B</div>
+      <div class="items order-0">C</div>
+      <div class="items order-0">D</div>
+      <div class="items order-0">E</div>
+    </div>
+
+    <h2 class="title">ORDERS MIXADOS</h2>
+    <div class="container">
+      <div class="items order-0">A</div>
+      <div class="items order-4">B</div>
+      <div class="items order-2">C</div>
+      <div class="items order-3">D</div>
+      <div class="items order-1">E</div>
+    </div>
+
+  
+  <h1 class="title">ORDERS EM COLUMN</h1>
+  <h2 class="title">ORDERS = 0</h2>
+  <div class="container direction-column">
+    <div class="items">A</div>
+    <div class="items">B</div>
+    <div class="items">C</div>
+    <div class="items">D</div>
+    <div class="items">E</div>
+  </div>
+
+  <h2 class="title">ORDERS MIXADOS</h2>
+  <div class="container direction-column">
+    <div class="items order-0">A</div>
+    <div class="items order-4">B</div>
+    <div class="items order-2">C</div>
+    <div class="items order-3">D</div>
+    <div class="items order-1">E</div>
+  </div>
+</body>
+</html>
