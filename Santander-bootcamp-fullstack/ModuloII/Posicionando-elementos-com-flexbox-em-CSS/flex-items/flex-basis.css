@@ -1,0 +1,10 @@
+.title {
+  color: blueviolet;
+  font-size: 50px;
+}
+
+p {
+  font-size:x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 600px;
+}
