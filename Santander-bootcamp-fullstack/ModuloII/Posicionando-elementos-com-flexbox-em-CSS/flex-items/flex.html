@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="flex.css">
+  <title>Introdução - Flex</title>
+</head>
+<body>
+  <h1 class="title">FLEX</h1>
+  <p>Essa propriedade é um atalho para as propriedades: grow, shrink e basis</p>
+
+  <h2 class="title">FLEX 1</h2>
+  <div class="container">
+    <div class="item flex-1">A</div>
+    <div class="item flex-1">BBB</div>
+    <div class="item flex-1">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+
+  <h2 class="title">FLEX MIX</h2>
+  <div class="container">
+    <div class="item flex-2">A</div>
+    <div class="item flex-2">BBB</div>
+    <div class="item flex-1">CC</div>
+    <div class="item flex-1">D</div>
+    <div class="item flex-1">EF</div>
+  </div>
+
+  <h2 class="title">WIDTH IGNORADO => BASIS = 0</h2>
+  <div class="container">
+    <div class="item flex-1 largura">A</div>
+    <div class="item flex-1 largura">BBB</div>
+    <div class="item flex-1 largura">CC</div>
+    <div class="item flex-1 largura">D</div>
+    <div class="item flex-1 largura">EF</div>
+  </div>
+</body>
+</html>
