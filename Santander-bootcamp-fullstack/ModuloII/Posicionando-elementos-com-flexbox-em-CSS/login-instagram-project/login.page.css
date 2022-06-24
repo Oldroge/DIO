@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 9px;
+  width: 350px;
+  height: 396px;
+}
+
+.instagram-logo {
+  width: 175px;
+  height: 56px;
+  margin: 20px;
+}
