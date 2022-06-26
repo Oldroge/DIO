@@ -10,7 +10,7 @@
   border: 1px solid rgb(175, 174, 174);
   border-radius: 9px;
   width: 350px;
-  height: 396px;
+  height: 386px;
 }
 
 .instagram-logo {
@@ -119,4 +119,8 @@ a {
   margin: 5px;
   font-weight: 900;
   font-size: 14px;
+}
+
+.forgot-password {
+  font-size: 12px;
 }
