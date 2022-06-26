@@ -6,6 +6,7 @@
 .login-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 1px solid rgb(175, 174, 174);
   border-radius: 9px;
   width: 350px;
@@ -40,7 +41,7 @@
   justify-content: center;
   align-self: center;
   border-radius: 4px;
-  border: 1px solid rgb(175, 174, 174);;
+  border: 1px solid rgb(175, 174, 174);
   width: 240px;
   height: 30px;
   margin-top: 2px;
@@ -54,10 +55,10 @@
 
 .div-button-login {
   display: flex;
-  width: 336px;
+  width: 259px;
   height: 100px;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .button-login {
@@ -70,5 +71,26 @@
   border: 1px solid rgb(38, 139, 233);
   width: 250px;
   height: 30px;
-  
+}
+
+.after-button-or {
+  display: flex;
+  width: 270px;
+  height: 23px;
+  justify-content: center;
+  align-items: baseline;
+  margin: 10px;
+} 
+
+.lines-around-or {
+  border: 1px solid rgb(175, 174, 174);
+  width: 106px;
+  align-self: flex-end;
+}
+
+.or-text-line {
+  align-self: flex-end;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: rgb(175, 174, 174);
 }
