@@ -8,6 +8,10 @@ const CURRENT_NUMBER = document.getElementById('currentNumber');
 
 ELEMENT_BUTTON_SUM .addEventListener("click", () => {
 	count += 1;
+
+	if (count >= 10) {
+		ELEMENT_BUTTON_SUM.setAttribute('disabled', 'disabled')
+	}
 	CURRENT_NUMBER.innerHTML = count;
 });
 
