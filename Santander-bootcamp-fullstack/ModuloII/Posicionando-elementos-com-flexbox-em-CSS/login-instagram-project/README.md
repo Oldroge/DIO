@@ -11,8 +11,8 @@ O desenho inicial no figma não ficou igual ao projeto final desenvolvido, pois 
 ---
 
 ## Tecnologias utilizadas:
--HTML5
--CSS (flexbox)
+* HTML5
+* CSS (flexbox)
 
 ---
 
