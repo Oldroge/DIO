@@ -9,4 +9,5 @@ Projeto para criar uma simples lista de tarefas com HTML e JavaScript vanilla.
 3. Quando o usuário selecionar o checkbox, o item correspondente deve ficar com o texto riscado. (ex.: tarefa completa. dica: você pode resolver isso facilmente com CSS)
 
 O resultado esperado é parecido com este:
+
 ![todo list](./assets/exemplo.png)
