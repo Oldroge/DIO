@@ -3,7 +3,7 @@
 Desafio indicado a instrutora durante o curso de introdução ao JavaScript para fazer integração de um código javascript a uma página HTML.
 
 ## Desafios:
-1. implementar os eventos usando o método addEventListener.
+1. implementar os eventos usando o método addEventListener. :heavy_check_mark:
 
 2. Criar condicionais que desabilitam o botão de incrementar ou decrementar quando count chegar a um determinado valor (ex.: 0 <= count >= 10).
 
