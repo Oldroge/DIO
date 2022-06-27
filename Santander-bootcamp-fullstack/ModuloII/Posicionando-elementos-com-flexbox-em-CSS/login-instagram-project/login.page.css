@@ -1,0 +1,179 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-image: url('https://rockcontent.com/br/wp-content/uploads/sites/2/2019/04/Repost-no-Instagram.png');
+}
+
+.main-section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(175, 174, 174);
+  background-color: white;
+  border-radius: 9px;
+  width: 350px;
+  height: 386px;
+}
+
+.instagram-logo {
+  align-self: center;
+  width: 175px;
+  height: 56px;
+  margin: 20px;
+}
+
+.input-login {
+  width: 257px;
+  height: 35px;
+  margin: 2px;
+}
+
+.text-input-span {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  color: rgb(175, 174, 174);
+  margin: 2px 0px 0px 6px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 13px;
+}
+
+.inputs-login {
+  justify-content: center;
+  align-self: center;
+  border-radius: 4px;
+  border: 1px solid rgb(175, 174, 174);
+  width: 240px;
+  height: 30px;
+  margin-top: 2px;
+}
+
+.label-inputs-login-senha {
+  align-self: center;
+  width: 260px;
+  height: 40px;
+}
+
+.div-button-login {
+  display: flex;
+  width: 259px;
+  height: 100px;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.button-login {
+  background-color: rgb(38, 139, 233);
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 4px;
+  border: 1px solid rgb(38, 139, 233);
+  width: 250px;
+  height: 30px;
+}
+
+.after-button-or {
+  display: flex;
+  width: 270px;
+  height: 23px;
+  justify-content: center;
+  align-items: baseline;
+  margin: 10px;
+} 
+
+.lines-around-or {
+  border: 1px solid rgb(175, 174, 174);
+  width: 106px;
+  align-self: flex-end;
+}
+
+.or-text-line {
+  align-self: flex-end;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: rgb(175, 174, 174);
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+}
+
+.facebook-logo {
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(12, 0, 177);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.facebook-logo-text {
+  margin: 5px;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.forgot-password {
+  font-size: 12px;
+}
+
+p {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.subscribe {
+  border: 1px solid rgb(175, 174, 174);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 350px;
+  height: 50px;
+  align-items: center;
+  background-color: white;
+}
+
+.link-subscribe {
+  color: rgb(38, 139, 233);
+  font-weight: 900;
+}
+
+.download-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.logos-for-download {
+  margin-top: 20px;
+  width: 147px;
+  height: 56px;
+}
+
+@media screen and (max-width: 996px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('https://rockcontent.com/br/wp-content/uploads/sites/2/2019/04/Repost-no-Instagram.png');
+  }
+}

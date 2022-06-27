@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="flex-shrink.css">
+  <title>Introdução - flex shrink</title>
+</head>
+<body>
+  <h1 class="title">Flex shrink</h1>
+  <p>Está propriedade estabelece a redução ou comprensão do tamanho de um item.</p>
+
+  <h2 class="title">FLEX SHRINK: 1</h2>
+  <div class="container">
+    <div class="items s-1 f-g1">A</div>
+    <div class="items s-1 f-g1">B</div>
+    <div class="items s-1 f-g1">C</div>
+    <div class="items s-1 f-g1">D</div>
+    <div class="items s-1 f-g1">E</div>
+  </div>
+
+  <h2 class="title">FLEX SHRINK 1 WITH MORE CONTENT</h2>
+  <div class="container">
+    <div class="items s-1 f-g1">A</div>
+    <div class="items s-1 f-g1">Lorem ipsum dolor.</div>
+    <div class="items s-1 f-g1">C</div>
+    <div class="items s-1 f-g1">D</div>
+  </div>
+
+  <h2 class="title">FLEX SHRINK 0 / basis 100px</h2>
+  <div class="container">
+    <div class="items s-0 f-g1">A</div>
+    <div class="items s-0 f-g1">Lorem ipsum dolor.</div>
+    <div class="items s-0 f-g1">C</div>
+    <div class="items s-0 f-g1">D</div>
+  </div>
+
+  <h2 class="title">FLEX SHRINK MIX / basis 100px</h2>
+  <div class="container">
+    <div class="items s-1 f-g1">A</div>
+    <div class="items s-2 f-g1">Lorem ipsum dolor.</div>
+    <div class="items s-2 f-g1">C</div>
+    <div class="items s-3 f-g1">D</div>
+  </div>
+
+</body>
+</html>

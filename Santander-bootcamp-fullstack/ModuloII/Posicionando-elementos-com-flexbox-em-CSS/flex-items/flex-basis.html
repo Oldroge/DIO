@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="flex-basis.css">
+  <title>Introdução - Flex basis</title>
+</head>
+<body>
+  <h1 class="title">Flex Basis</h1>
+  <p>É a propriedade que estabelece o tamanho inicial do item antes das distribuições de espaço restante dentro dele, usando como base o conteúdo interno disposto.</p>
+
+  <h2 class="title">Valores possíveis</h2>
+  <p>Auto: caso o item não tenha tamanho, este será proporcional ao conteúdo do item</p>
+  <p>px, %, em, ...: são valores exatos previamente definidos</p>
+  <p>0 (zero): terá relação com a definição do flex-grow</p>
+
+  <h3 class="title">Basis auto</h3>
+  <div class="container">
+    <div class="item b-auto fg-1">A</div>
+    <div class="item b-auto fg-1">BBBB</div>
+    <div class="item b-auto fg-1">C</div>
+    <div class="item b-auto fg-2">DD</div>
+  </div>
+
+  <h3 class="title">Basis em zero</h3>
+  <div class="container">
+    <div class="item b-zero fg-1">A</div>
+    <div class="item b-zero fg-1">BBBB</div>
+    <div class="item b-zero fg-1">C</div>
+    <div class="item b-zero fg-1">DD</div>
+  </div>
+
+  <h3 class="title">Basis + width definido</h3>
+  <div class="container">
+    <div class="item w-100 fg-2">A</div>
+    <div class="item w-100 fg-2">BBBB</div>
+    <div class="item w-100 fg-2">C</div>
+    <div class="item w-100 fg-2">DD</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.title {
+  color: blueviolet;
+  font-size: 50px;
+}
+
+p {
+  font-size:x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 600px;
+}
+
+.flex-container {
+  display: flex;
+  border: 2px solid black;
+  max-width: 300px;
+}
+
+.item {
+  background-color: blueviolet;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.fg-0 {
+  flex-grow: 0;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fg-2 {
+  flex-grow: 2;
+}
+
+.fg-3 {
+  flex-grow: 3;
+}

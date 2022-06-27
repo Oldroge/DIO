@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="align-self.css">
+  <title>Introdução - align self</title>
+</head>
+<body>
+  <h1 class="title">ALIGN SELF</h1>
+  <p>É a propriedade que estabelece o alinhamento de modo indvidual sobre um determinado item</p>
+
+  <h3 class="title">Valores possíveis</h3>
+  <ul>
+    <li>Auto: Valor padrão, irá respeitar a definição de align-items do container</li>
+    <li>Flex-start: início do container relativo de acordo com o eixo</li>
+    <li>Flex end: Fim do container relativo de acordo com o eixo</li>
+    <li>Center: relativo de acordo com o eixo</li>
+    <li>Stretch: ocupa todos os espaços relativamente</li>
+    <li>baseline: utiliza a linha base da tipografia</li>
+  </ul>
+  
+  <h1 class="title">ROW</h1>
+  <h2 class="title">Align self: auto com align items center</h2>
+  <div class="container align-container">
+    <div class="items auto">ABCCC</div>
+    <div class="items auto">ZBA</div>
+    <div class="items auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    <div class="items auto">A</div>
+    <div class="items auto">ABCDEFG</div>
+  </div>
+
+  <h2 class="title">Align self: mixando propriedades</h2>
+  <div class="container">
+    <div class="items stretch">ABCCC</div>
+    <div class="items center">ZBA</div>
+    <div class="items start">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    <div class="items center">A</div>
+    <div class="items end">ABCDEFG</div>
+  </div>
+
+  <h2 class="title">Align self: alterando tamanhos</h2>
+  <div class="container">
+    <div class="items stretch">ABCCcccccccccccccC</div>
+    <div class="items center">ZBA</div>
+    <div class="items start">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+  </div>
+
+  <h1 class="title">COLUMN</h1>
+  <h2 class="title">Align self: auto com align items center</h2>
+  <div class="container align-container column">
+    <div class="items auto">ABCCC</div>
+    <div class="items auto">ZBA</div>
+    <div class="items auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    <div class="items auto">A</div>
+    <div class="items auto">ABCDEFG</div>
+  </div>
+
+  <h2 class="title">Align self: mixando propriedades</h2>
+  <div class="container column">
+    <div class="items stretch">ABCCC</div>
+    <div class="items center">ZBA</div>
+    <div class="items start">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    <div class="items center">A</div>
+    <div class="items end">ABCDEFG</div>
+  </div>
+
+  <h2 class="title">Align self: alterando tamanhos</h2>
+  <div class="container column">
+    <div class="items stretch">ABCCcccccccccccccC</div>
+    <div class="items center">ZBA</div>
+    <div class="items start">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+  </div>
+
+</body>
+</html>
