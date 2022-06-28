@@ -37,8 +37,3 @@ input[type="text"] {
   align-items: center;
   margin-bottom: 10px;
 }
-
-:checked + label {
-  text-decoration: line-through;
-  color: grey;
-}
