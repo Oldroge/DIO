@@ -23,8 +23,15 @@ var num;
 
 /* Com let já não ocorre o mesmo problema:*/
 
-num = 4;
+num2 = 4;
 
-console.log(num) // SyntaxError: Identifier 'num' has already been declared
+console.log(num2) // ReferenceError: Cannot access 'num2' before initialization
 
-let num;
+let num2;
+
+/* Constantes além de não conseguirmos fazer hoisting e a declaração dela funcionar através de bloco, não da pra ser redeclarada: */
+const FIRST_NAME = "stephany"; // Por convenção a const é declarado com as letras maiúsculas
+
+FIRST_NAME = "Araujo";
+
+// TypeError: Assignment to constant variable.
