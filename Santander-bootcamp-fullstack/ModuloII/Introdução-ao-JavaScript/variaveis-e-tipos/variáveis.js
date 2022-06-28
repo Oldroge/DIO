@@ -17,6 +17,14 @@ console.log(b) // 2
 
 num = 4;
 
-console.log(num)
+console.log(num) // 4
 
 var num;
+
+/* Com let já não ocorre o mesmo problema:*/
+
+num = 4;
+
+console.log(num) // SyntaxError: Identifier 'num' has already been declared
+
+let num;
