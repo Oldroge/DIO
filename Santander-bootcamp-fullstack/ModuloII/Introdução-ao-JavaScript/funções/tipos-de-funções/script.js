@@ -23,6 +23,26 @@ const nomeDaVariável = function () {
 // função autoinvocável com parâmetros:
 (
   function(a, b) {
-    console.log(a + b);
+    console.log("função autoinvocável", a + b);
   }
 )(1, 2);
+
+
+// CALLBACKS:
+const calc = function(operacao, param1, param2) {
+  return operacao(param1, param2);
+};
+
+const soma = function(num1, num2) {
+  return num1 + num2;
+};
+
+const diminuir = function(num1, num2) {
+  return num1 - num2;
+};
+
+const resultadoSoma = calc(soma, 2, 3);
+const resultadoDiminuir = calc(diminuir, 2, 3);
+
+console.log("resultado Soma", resultadoSoma);
+console.log("resultado diminuir", resultadoDiminuir);
