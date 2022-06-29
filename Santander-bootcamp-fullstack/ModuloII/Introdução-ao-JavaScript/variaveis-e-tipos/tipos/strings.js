@@ -18,3 +18,16 @@ console.log(palindromo + "\n" + concatenar) // \n Quebra de linha
 console.log(palindromo + "\n\n" + concatenar) // \n Pula linhas
 
 console.log(`Variável palindromo ${palindromo} e variável concatenar ${concatenar}`) // Template strings
+
+console.log(palindromo.split("")) // separa por caracter, retorna uma lista
+
+console.log(palindromo.split(" ")) // separa por expaço, retorna uma lista
+
+console.log(palindromo.includes("subi")) // retorna true or false
+
+console.log(palindromo.startsWith("S")) // Retorna true or false e é case sensitive
+
+console.log(palindromo.endsWith("s")) // Retorna true or false e é case sensitive
+
+console.log(palindromo.replace('socorra me', "ajuda me")) // O dado anterior por um novo dado
+
