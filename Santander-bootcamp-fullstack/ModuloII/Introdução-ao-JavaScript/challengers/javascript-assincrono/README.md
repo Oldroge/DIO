@@ -4,3 +4,7 @@ Nesta atividade, criei uma página que carrega fotos aleatórias de gatinhos sem
 
 1. Utilize a API `https://thatcopy.pw/catapi/rest` para fazer as chamadas com o método `fetch()`;
 2. Utilize seus conhecimentos na manipulação do DOM para criar a imagem e ativar o evento de clique do botão!
+
+
+# OBS.:
+Não foi possível concluir o desafio pois a API estava com problema 523, que é quando o servidor de origem não tem uma rota para o endereço de IP do servidor de origem.
