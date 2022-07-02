@@ -1,9 +1,7 @@
 function soma(a: number, b: number) {
   return a + b;
 };
-soma(1, 2);
-
-
+console.log(soma(2, 1));
 // Types
 // Interfaces
 
@@ -24,7 +22,7 @@ const animal: IAnimal = {
   executarRugido: (alturaEmDecibeis) => (`${alturaEmDecibeis}dB`),
 }
 
-animal.executarRugido(10);
+console.log(animal.executarRugido(10));
 
 const felino: IFelinos = {
   nome: 'Leao',
@@ -32,3 +30,9 @@ const felino: IFelinos = {
   visaoNoturna: true,
   executarRugido: (alturaEmDecibeis) => (`${alturaEmDecibeis}dB`),
 };
+
+export {
+  soma,
+  animal,
+  felino
+}
