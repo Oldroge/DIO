@@ -8,3 +8,6 @@ meuElemento.classList.remove('classe');
 
 // método classList.toggle() adiciona uma classe caso ela não exista e caso ela exista remove;
 meuElemento.classList.toggle('darkMode');
+
+// utilizando o style.color através do DOM conseguimos acessar o CSS;
+document.getElementsByClassName("p").style.color = "blue";
