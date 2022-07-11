@@ -3,8 +3,6 @@ import { Course } from "./course";
 import { CourseService } from "./course.service";
 // Dúvida
 @Component({
-    // O selector será a tag correspondente no arquivo HTML pai;
-    selector: 'app-course-list',
     templateUrl: './course-list.component.html'
 })
 //                                          Dúvida
