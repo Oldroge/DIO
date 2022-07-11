@@ -15,7 +15,8 @@ Então todos os atributos, propriedades e etc declarados dentro do escopo da cla
 
 <!-- Pode-se usar o 'two way data bind' que tanto o valor da propriedade name, vai para o input, quando o caminho inverso é feito. isto é feito utilizando o colchete e parenteses  -->
 <!-- <input [(ngModel)]="name" name="name" > -->
-
-<div class="container">
-  <app-course-list></app-course-list>
+<app-nav-bar></app-nav-bar>
+<div class="container mt-4">
+  <!-- Ver sobre esse router-outlet -->
+  <router-outlet></router-outlet>
 </div>
