@@ -10,17 +10,31 @@ import { CourseService } from "./course.service";
 //                                          Dúvida
 export class CourseListComponent implements OnInit {
 
+    filteredCourses: Course[] = [];
 
-    courses: Course[] = [];
-    // O ngOnInit é um local para colocar o código logo após que a classe for instanciada
-
+    _courses: Course[] = [];
+    
+    _filterBy: string;
+    
     constructor(private courseService: CourseService) {
-
+        
+    }
+    
+    // O ngOnInit é um local para colocar o código logo após que a classe for instanciada
+    ngOnInit(): void {
+        this._courses = this.courseService.retrieveAll();
+        this.filteredCourses = this._courses;
+        
     }
 
-    ngOnInit(): void {
-        this.courses = this.courseService.retrieveAll();
-        
+    set filter(value: string) {
+        this._filterBy = value;
+
+        this.filteredCourses = this._courses.filter((course: Course) => course.name.toLocaleLowerCase().indexOf(this._filterBy.toLocaleLowerCase()) > -1);
+    }
+
+    get filter() {
+        return this._filterBy;
     }
 
 
