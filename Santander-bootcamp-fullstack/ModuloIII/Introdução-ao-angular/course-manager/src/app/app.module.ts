@@ -10,6 +10,7 @@ import { starComponent } from './star/star.component';
 import { replacePipe } from './pipe/replace.pipe';
 import { navBarComponent } from './nav-bar/nav-bar.component';
 import { Error404Component } from './error-404/error-404.component';
+import { courseInfoComponent } from './courses/course-info.component';
 // Na parte superior do documento, são feitos os imports
 
 @NgModule({
@@ -20,7 +21,8 @@ import { Error404Component } from './error-404/error-404.component';
     starComponent,
     replacePipe,
     navBarComponent,
-    Error404Component
+    Error404Component,
+    courseInfoComponent
   ],
   // Todos os imports feitos para dentro do módulo, ficam dentro desta propriedade
   imports: [
@@ -29,10 +31,13 @@ import { Error404Component } from './error-404/error-404.component';
     // Dúvida do forRoot
     RouterModule.forRoot([
       {
-        path: '', redirectTo: 'courses', pathMatch: 'full'
+        path: 'courses', component: CourseListComponent
       },
       {
-        path: 'courses', component: CourseListComponent
+        path: 'courses/info/:id', component: courseInfoComponent
+      },
+      {
+        path: '', redirectTo: 'courses', pathMatch: 'full'
       },
       {
         path: '**', component: Error404Component
