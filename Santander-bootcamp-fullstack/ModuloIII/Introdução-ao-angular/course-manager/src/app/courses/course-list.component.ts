@@ -20,9 +20,17 @@ export class CourseListComponent implements OnInit {
     
     // O ngOnInit é um local para colocar o código logo após que a classe for instanciada
     ngOnInit(): void {
-        this._courses = this.courseService.retrieveAll();
-        this.filteredCourses = this._courses;
-        
+        this.retrieveAll();
+    }
+
+    retrieveAll(): void {
+        this.courseService.retrieveAll().subscribe({
+            next: courses => {
+                this._courses = courses;
+                this.filteredCourses = this._courses;
+            },
+            error: err => console.log('error', err) 
+        });
     }
 
     set filter(value: string) {
