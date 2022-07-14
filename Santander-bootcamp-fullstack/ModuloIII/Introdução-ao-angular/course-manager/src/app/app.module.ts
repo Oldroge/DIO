@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { navBarComponent } from './core/component/nav-bar/nav-bar.component';
-import { Error404Component } from './error-404/error-404.component';
 import { courseModule } from './courses/course.module';
 import { coreModule } from './core/core.module';
 // Na parte superior do documento, são feitos os imports
@@ -13,7 +11,6 @@ import { coreModule } from './core/core.module';
   // Todas as declarações de classes/classes criadas, ficam dentro da propriedade declarations
   declarations: [
     AppComponent,
-    Error404Component,
   ],
   // Todos os imports feitos para dentro do módulo, ficam dentro desta propriedade
   imports: [
@@ -25,9 +22,6 @@ import { coreModule } from './core/core.module';
       {
         path: '', redirectTo: 'courses', pathMatch: 'full'
       },
-      {
-        path: '**', component: Error404Component
-      }
     ])
   ],
   providers: [],
