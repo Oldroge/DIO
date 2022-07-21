@@ -1,2 +1,7 @@
 <h1 class="text-success text-center">{{ title }}</h1>
-<h4 class="text-center">Contador: {{ counter }}</h4>
+<h4
+  class="text-center"
+  [ngStyle]="{ background: counter > 5 ? 'red' : 'green'  }"
+>
+  Contador: {{ counter }}
+</h4>
