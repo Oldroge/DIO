@@ -1,4 +1,6 @@
 <h1 class="text-success text-center">{{ title }}</h1>
+
+<!-- Diretivas de atributo -->
 <h4
   class="text-center"
   [ngStyle]="{ background: counter > 5 ? 'red' : 'green'  }"
@@ -6,3 +8,19 @@
 >
   Contador: {{ counter }}
 </h4>
+
+<!-- Diretivas estruturais -->
+<h4
+  class="text-success text-center"
+  *ngIf="counter > 5 else: menor"
+>
+  Contador passou de 5!
+</h4>
+
+<ng-template #menor>
+ <h4
+  class="text-success text-center"
+>
+  Contador menor que 5...
+</h4>
+</ng-template>
