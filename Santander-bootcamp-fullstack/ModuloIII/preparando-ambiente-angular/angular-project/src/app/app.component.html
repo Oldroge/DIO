@@ -42,10 +42,10 @@
 
 <ng-template
   *ngFor="let person of people"
-  [ngIf]="person.sobrenome === 'Martins'"
+  [ngIf]="person.lastName === 'Martins'"
 >
   <ul class="text-success text-center">
-    <li>{{person.nome + ' ' + person.sobrenome}}</li>
+    <li>{{person.firstName + ' ' + person.lastName}} e a sua idade é {{person.age}}</li>
   </ul>
 
 </ng-template>
