@@ -26,6 +26,7 @@ export class AppComponent implements OnInit {
       sobrenome: 'Amorim'
     }
   ];
+  text = '';
 
   ngOnInit() {
     let increaseCounter = setInterval(() => {
