@@ -1,0 +1,7 @@
+<ul class="text-success text-center list-unstyled">
+    <li
+        *ngFor="let person of people"
+    >
+        {{ person.firstName + ' ' + person.lastName }}, idade: {{ person.age }}
+    </li>
+</ul>
