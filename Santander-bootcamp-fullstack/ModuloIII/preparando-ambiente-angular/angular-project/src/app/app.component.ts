@@ -8,12 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Diretivas';
   counter = 1;
-  // allNum: number[] = [];
+  people = [
+    {
+      nome: 'Rogério',
+      sobrenome: 'Martins'
+    },
+    {
+      nome: 'Fabrício',
+      sobrenome: 'Gonçalves'
+    },
+    {
+      nome: 'Mariana',
+      sobrenome: 'Martins'
+    },
+    {
+      nome: 'Robson',
+      sobrenome: 'Amorim'
+    }
+  ];
 
   ngOnInit() {
     let increaseCounter = setInterval(() => {
       this.counter++;
-      // console.log(this.counter % 2 === 0)
+
       if (this.counter === 10) {
         clearInterval(increaseCounter);
       }

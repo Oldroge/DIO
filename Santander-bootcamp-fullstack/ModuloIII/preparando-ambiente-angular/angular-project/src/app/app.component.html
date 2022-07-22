@@ -39,3 +39,13 @@
   *ngSwitchDefault
 >O número {{counter}} é impar</li>
 </ul>
+
+<ng-template
+  *ngFor="let person of people"
+  [ngIf]="person.sobrenome === 'Martins'"
+>
+  <ul class="text-success text-center">
+    <li>{{person.nome + ' ' + person.sobrenome}}</li>
+  </ul>
+
+</ng-template>
