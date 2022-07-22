@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
     }
   ];
   text = '';
+  name = '';
 
   ngOnInit() {
     let increaseCounter = setInterval(() => {
@@ -39,6 +40,7 @@ export class AppComponent implements OnInit {
   }
 
   click(nome: string): void {
+    this.name = nome;
     console.log('clicou em mim', nome)
   };
 }
