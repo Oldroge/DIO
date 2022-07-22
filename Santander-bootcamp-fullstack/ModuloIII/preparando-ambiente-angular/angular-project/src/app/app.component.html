@@ -24,3 +24,18 @@
   Contador menor que 5...
 </h4>
 </ng-template>
+
+<ul
+  class="text-success text-center"
+  [ngSwitch]="counter % 2"
+>
+  <li
+    class="text-success text-center bg-dark text-light"
+    *ngSwitchCase="counter === 0"
+  >O número {{counter}} é par</li>
+
+  <li
+  class="text-success text-center bg-warning"
+  *ngSwitchDefault
+>O número {{counter}} é impar</li>
+</ul>
