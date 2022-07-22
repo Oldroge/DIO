@@ -36,4 +36,8 @@ export class AppComponent implements OnInit {
       }
     }, 1000)
   }
+
+  click(nome: string): void {
+    console.log('clicou em mim', nome)
+  };
 }
