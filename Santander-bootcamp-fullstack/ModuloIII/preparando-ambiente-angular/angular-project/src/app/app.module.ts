@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MarcaTextoDirective } from './shared/directives/marca-texto.directive';
@@ -19,7 +20,8 @@ import { ListApiComponent } from './shared/components/list-api/list-api.componen
   imports: [
     BrowserModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [PeopleService],
   bootstrap: [AppComponent]
