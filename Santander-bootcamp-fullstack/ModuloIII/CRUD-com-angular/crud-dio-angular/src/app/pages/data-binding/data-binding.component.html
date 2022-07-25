@@ -1,7 +1,7 @@
 <h1 [class]="textRed">Meu nome é {{text}}</h1>
-<button (click)="pinta()">Pinta texto</button>
+<button (click)="pinta()" [style.background-color]="bgColor">Pinta texto</button>
 <br>
-<img [src]="urlImage" [alt]="altText">
+<img [src]="urlImage" [alt]="altText" [style.width.px]="width">
 
 <button [attr.aria-label]="buttonText">{{ buttonText }}</button>
 

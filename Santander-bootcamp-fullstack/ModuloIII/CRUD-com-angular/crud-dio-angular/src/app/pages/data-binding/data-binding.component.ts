@@ -11,7 +11,8 @@ export class DataBindingComponent implements OnInit {
   altText = 'Essa é uma imagem';
   buttonText = 'Clique aqui';
   textRed = 'textred';
-
+  bgColor = 'green';
+  width = 600;
   constructor() { }
 
   ngOnInit(): void {
