@@ -32,4 +32,8 @@ export class DataBindingComponent implements OnInit {
     }
   }
 
+  newClick(a: string) {
+    console.log(a);
+  }
+
 }
