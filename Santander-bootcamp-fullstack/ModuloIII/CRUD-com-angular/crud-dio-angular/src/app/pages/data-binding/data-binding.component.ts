@@ -13,6 +13,8 @@ export class DataBindingComponent implements OnInit {
   textRed = 'textred';
   bgColor = 'green';
   width = 600;
+  textInput = '';
+
   constructor() { }
 
   ngOnInit(): void {
