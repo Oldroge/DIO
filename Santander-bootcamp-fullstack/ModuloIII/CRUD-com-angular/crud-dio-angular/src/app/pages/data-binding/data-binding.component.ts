@@ -14,6 +14,8 @@ export class DataBindingComponent implements OnInit {
   bgColor = 'green';
   width = 600;
   textInput = '';
+  number = 0;
+  destroy = false;
 
   constructor() { }
 
@@ -34,6 +36,14 @@ export class DataBindingComponent implements OnInit {
 
   newClick(a: string) {
     console.log(a);
+  }
+
+  incrementa() {
+    this.number++;
+  }
+
+  destroiComponente() {
+    this.destroy = true;
   }
 
 }
