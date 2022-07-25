@@ -1,0 +1,12 @@
+<h1 [class]="textRed">Meu nome é {{text}}</h1>
+<button (click)="pinta()">Pinta texto</button>
+<br>
+<img [src]="urlImage" [alt]="altText">
+
+<button [attr.aria-label]="buttonText">{{ buttonText }}</button>
+
+<button>Clique aqui</button>
+
+<input #input (keyup)="clicou(input.value)">
+
+{{ input.value }}
