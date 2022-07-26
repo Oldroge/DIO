@@ -50,7 +50,9 @@ import { UpperCasePipe } from '@angular/common';
     MatButtonModule,
     MatIconModule
   ],
-  providers: [UpperCasePipe],
+  providers: [
+    UpperCasePipe,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

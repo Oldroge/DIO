@@ -1,9 +1,15 @@
 <h1>Pipes</h1>
 <div class="form-floating mb-3">
-    <input class="form-control" type="email" id="floatingInput" placeholder="Digite">
+    <input
+        class="form-control"
+        type="email"
+        id="floatingInput"
+        placeholder="Digite"
+        [(ngModel)]="number"
+    >
     <label for="floatingInput">Digite:</label>
 </div>
 
-<p>{{ number }}</p>
+<p>{{ number | number: '2.0-1' }}</p>
 <p>{{ text }}</p>
 <p>{{ text | lowercase }}</p>
