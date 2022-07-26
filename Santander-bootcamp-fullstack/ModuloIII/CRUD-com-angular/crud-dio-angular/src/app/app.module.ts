@@ -21,6 +21,7 @@ import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
 import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
+import { UpperCasePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { PipesExampleComponent } from './pages/pipes-example/pipes-example.compo
     MatButtonModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [UpperCasePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
