@@ -1,3 +1,4 @@
+import { UpperCasePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipes-example.component.css']
 })
 export class PipesExampleComponent implements OnInit {
+  number = 2;
+  text = "Hello World";
 
-  constructor() { }
+  constructor(private upperCase: UpperCasePipe) { }
 
   ngOnInit(): void {
+    this.text = this.upperCase.transform(this.text);
   }
 
 }
