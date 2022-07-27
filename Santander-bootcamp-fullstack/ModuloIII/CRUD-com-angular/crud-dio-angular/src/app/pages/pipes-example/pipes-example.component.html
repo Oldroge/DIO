@@ -9,16 +9,29 @@
     >
     <label for="floatingInput">Digite:</label>
 </div>
-<h4>Sem formatação: </h4>
+<h4 class="fw-bold">Sem formatação: </h4>
 <p>{{ number | number }}</p>
 
-<h4>Com formatação: </h4>
+<h4 class="fw-bold">Com formatação: </h4>
 <p>{{ number | number:'2.1-1' }}</p>
 
-<h4>Com porcentagem: </h4>
+<h4 class="fw-bold">Com porcentagem: </h4>
 <p>{{ number | percent }}</p>
 
-<h4>Com moeda: </h4>
+<h4 class="fw-bold">Com moeda: </h4>
 <p>{{ number | currency: 'BRL' }}</p>
 <p>{{ text }}</p>
 <p>{{ text | lowercase }}</p>
+
+<h2>Pipe de data</h2>
+<h4 class="fw-bold">Sem pipe</h4>
+<p>{{date}}</p>
+
+<h4 class="fw-bold">Com pipe default:</h4>
+<p>{{date | date}}</p>
+
+<h4 class="fw-bold">Com pipe parâmetro full:</h4>
+<p>{{date | date: 'full'}}</p>
+
+<h4 class="fw-bold">Com pipe parâmetro short time:</h4>
+<p>{{date | date: 'shortTime'}}</p>
