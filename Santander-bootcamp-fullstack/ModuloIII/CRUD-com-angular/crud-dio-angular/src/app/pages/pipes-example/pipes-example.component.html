@@ -35,3 +35,12 @@
 
 <h4 class="fw-bold">Com pipe parâmetro short time:</h4>
 <p>{{date | date: 'shortTime'}}</p>
+
+<h4 class="fw-bold">Pipe encadeado:</h4>
+<p>{{date | date: 'full' | uppercase}}</p>
+
+<h4 class="fw-bold">Pipe JSON:</h4>
+<p>{{pessoa | json}}</p>
+
+<h4 class="fw-bold">Pipe slice:</h4>
+<p>{{text | slice:3:8}}</p>

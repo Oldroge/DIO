@@ -10,6 +10,11 @@ export class PipesExampleComponent implements OnInit {
   number = 0;
   text = "Hello World";
   date = new Date;
+  pessoa = {
+    nome: 'Roge',
+    idade: '27',
+    profissao: 'dev'
+  }
 
   constructor(private upperCase: UpperCasePipe) { }
 
