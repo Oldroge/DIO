@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipes-example.component.css']
 })
 export class PipesExampleComponent implements OnInit {
-  number = 2;
+  number = 0;
   text = "Hello World";
 
   constructor(private upperCase: UpperCasePipe) { }

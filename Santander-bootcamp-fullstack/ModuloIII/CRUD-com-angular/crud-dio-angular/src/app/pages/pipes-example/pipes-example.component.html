@@ -9,7 +9,16 @@
     >
     <label for="floatingInput">Digite:</label>
 </div>
+<h4>Sem formatação: </h4>
+<p>{{ number | number }}</p>
 
-<p>{{ number | number: '2.0-1' }}</p>
+<h4>Com formatação: </h4>
+<p>{{ number | number:'2.1-1' }}</p>
+
+<h4>Com porcentagem: </h4>
+<p>{{ number | percent }}</p>
+
+<h4>Com moeda: </h4>
+<p>{{ number | currency: 'BRL' }}</p>
 <p>{{ text }}</p>
 <p>{{ text | lowercase }}</p>
