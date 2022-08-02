@@ -1,0 +1,46 @@
+<h1>Pipes</h1>
+<div class="form-floating mb-3">
+    <input
+        class="form-control"
+        type="email"
+        id="floatingInput"
+        placeholder="Digite"
+        [(ngModel)]="number"
+    >
+    <label for="floatingInput">Digite:</label>
+</div>
+<h4 class="fw-bold">Sem formatação: </h4>
+<p>{{ number | number }}</p>
+
+<h4 class="fw-bold">Com formatação: </h4>
+<p>{{ number | number:'2.1-1' : 'pt' }}</p>
+
+<h4 class="fw-bold">Com porcentagem: </h4>
+<p>{{ number | percent }}</p>
+
+<h4 class="fw-bold">Com moeda: </h4>
+<p>{{ number | currency: 'BRL' }}</p>
+<p>{{ text }}</p>
+<p>{{ text | lowercase }}</p>
+
+<h2>Pipe de data</h2>
+<h4 class="fw-bold">Sem pipe</h4>
+<p>{{date}}</p>
+
+<h4 class="fw-bold">Com pipe default:</h4>
+<p>{{date | date}}</p>
+
+<h4 class="fw-bold">Com pipe parâmetro full:</h4>
+<p>{{date | date: 'full'}}</p>
+
+<h4 class="fw-bold">Com pipe parâmetro short time:</h4>
+<p>{{date | date: 'shortTime'}}</p>
+
+<h4 class="fw-bold">Pipe encadeado:</h4>
+<p>{{date | date: 'full' | uppercase}}</p>
+
+<h4 class="fw-bold">Pipe JSON:</h4>
+<p>{{pessoa | json}}</p>
+
+<h4 class="fw-bold">Pipe slice:</h4>
+<p>{{text | slice:3:8}}</p>

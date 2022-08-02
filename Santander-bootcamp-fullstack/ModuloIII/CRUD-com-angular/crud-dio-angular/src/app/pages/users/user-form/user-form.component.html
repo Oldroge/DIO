@@ -1,0 +1,79 @@
+<div class="card w-100 my-5">
+    <div class="card-body">
+        <h1 class="card-title text-center">Formulário de usuários</h1>
+        <form [formGroup]="userForm">
+            <div class="row my-4">
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input
+                            type="text"
+                            class="form-control"
+                            formControlName="nome"
+                            id="Nome"
+                            placeholder="Digite o nome"
+                        >
+                        <label for="Nome">Nome</label>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input
+                            type="text"
+                            class="form-control"
+                            formControlName="sobrenome"
+                            id="Sobrenome"
+                            placeholder="Digite o sobrenome"
+                        >
+                        <label for="Sobrenome">Sobrenome</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input
+                            type="text"
+                            class="form-control"
+                            formControlName="idade"
+                            id="Idade"
+                            placeholder="Digite a sua idade"
+                        >
+                        <label for="Idade">Idade</label>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input
+                            type="text"
+                            class="form-control"
+                            formControlName="profissao"
+                            id="Profissão"
+                            placeholder="Digite a Profissão">
+                        <label for="Profissão">Profissão</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="form-group col-12 mt-4">
+                    <button
+                        type="button"
+                        class="btn btn-outline-success float-start"
+                        (click)="actionButton()" 
+                    >
+                        Enviar
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-outline-danger 
+                        float-end"
+                    >
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

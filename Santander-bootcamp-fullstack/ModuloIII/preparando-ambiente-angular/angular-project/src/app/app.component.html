@@ -1,0 +1,81 @@
+<h1 class="text-success text-center">{{ title }}</h1>
+
+<!-- Diretivas de atributo -->
+<h4
+  class="text-center"
+  [ngStyle]="{ background: counter > 5 ? 'red' : 'green'  }"
+  [ngClass]="{ custom: counter > 5 }"
+>
+  Contador: {{ counter }}
+</h4>
+
+<!-- Diretivas estruturais -->
+<h4
+  class="text-success text-center"
+  *ngIf="counter > 5 else: menor"
+>
+  Contador passou de 5!
+</h4>
+
+<ng-template #menor>
+ <h4
+  class="text-success text-center"
+>
+  Contador menor que 5...
+</h4>
+</ng-template>
+
+<ul
+  class="text-success text-center list-unstyled"
+  [ngSwitch]="counter % 2"
+>
+  <li
+    class="text-success text-center bg-dark text-light"
+    *ngSwitchCase="counter === 0"
+  >
+    O número {{counter}} é par
+  </li>
+
+  <li
+  class="text-success text-center bg-warning"
+  *ngSwitchDefault
+  >
+    O número {{counter}} é impar
+  </li>
+</ul>
+
+<ng-template
+  *ngFor="let person of people"
+  [ngIf]="person.lastName === 'Martins'"
+>
+  <ul class="text-success text-center list-unstyled">
+    <li>{{person.firstName + ' ' + person.lastName}} e a sua idade é {{person.age}}</li>
+  </ul>
+
+</ng-template>
+<h3
+  appMarcaTexto
+  class="text-center"
+  corDeFundo="black"
+  corDoTexto="yellow"
+>{{name}}</h3>
+<button (click)="click('Roge')" class="btn btn-dark">Clique</button>
+
+<input
+  type="text"
+  class="form-control"
+  placeholder="digite aqui..."
+  [(ngModel)]="text"
+>
+<h4>Saída: {{text}}</h4>
+
+<app-list-people></app-list-people>
+
+<div class="container my-5">
+  <div class="row">
+    <h2 class="text-center">RICK AND MORTY</h2>
+    <div class="col-12">
+      <app-list-api></app-list-api>
+    </div>
+  </div>
+</div>

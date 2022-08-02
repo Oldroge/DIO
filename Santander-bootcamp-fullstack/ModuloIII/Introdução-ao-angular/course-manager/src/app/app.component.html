@@ -1,0 +1,22 @@
+<!-- Interpolação -->
+<!-- Para fazer a interpolação se é utilizado as chaves dentro de chaves, com a referência de variáveis dinâmicas. Para fazer essa interpolação, no arquivo app.component.ts no templateUrl, é referenciado este arquivo, no caso './app.component.html'
+Então todos os atributos, propriedades e etc declarados dentro do escopo da classe App componente pode ser acessado com interpolação dentro deste arquivo. -->
+<!-- <h1>
+  {{ title }}
+</h1>
+<br>
+<h3>
+  {{ name }}
+</h3> -->
+<!-- <br> -->
+<!-- O ngModel cria um FormControl, conecta com um elemento de formulário -->
+<!-- Quando colocado apenas entre colchetes, ele se torna um 'one way data bind', que significa que apenas o que for colocado na variável será exibido no input, não faz o caminho inverso. No caso se digitar qualquer valor no input, não irá alterar o valor da propriedade name -->
+<!-- <input [ngModel]="name" name="name" > -->
+
+<!-- Pode-se usar o 'two way data bind' que tanto o valor da propriedade name, vai para o input, quando o caminho inverso é feito. isto é feito utilizando o colchete e parenteses  -->
+<!-- <input [(ngModel)]="name" name="name" > -->
+<app-nav-bar></app-nav-bar>
+<div class="container mt-4">
+  <!-- Ver sobre esse router-outlet -->
+  <router-outlet></router-outlet>
+</div>
