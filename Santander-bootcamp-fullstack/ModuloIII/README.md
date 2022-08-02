@@ -12,4 +12,3 @@
 - Criação de pipes com angular
 - Desafios Intermediários Js - Santander Fullstack developer
 - [Como criar um front-end de um e-commerce utilizando angular](https://github.com/Oldroge/books-store)
-- 
