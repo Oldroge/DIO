@@ -1,5 +1,6 @@
 import calculo.com.MetodosDeCalculo;
 import emprestimo.com.Emprestimo;
+import overload.com.Overload;
 import saudacoes.com.SaudacaoDoDia;
 
 public class main {
@@ -24,5 +25,14 @@ public class main {
         emprestimo.calcular(1000, Emprestimo.getDuasParcelas());
         emprestimo.calcular(1000, Emprestimo.getTresParcelas());
         emprestimo.calcular(1000, 5);
+
+        System.out.println("===================");
+
+        System.out.println("OVERLOAD");
+        Overload quadrilateros = new Overload();
+
+        quadrilateros.area(4);
+        quadrilateros.area(2, 4);
+        quadrilateros.area(3, 2, 5);
     }
 }
