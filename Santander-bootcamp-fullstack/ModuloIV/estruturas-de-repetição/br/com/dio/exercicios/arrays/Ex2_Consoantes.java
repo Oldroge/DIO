@@ -2,7 +2,7 @@ package br.com.dio.exercicios.arrays;
 
 import java.util.Scanner;
 
-public class Consoantes {
+public class Ex2_Consoantes {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
