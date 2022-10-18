@@ -1,5 +1,10 @@
+const numbers = [15, 10, 140, 234, 21, 37, 34, 2, 4];
+let i = 0;
+
 function gets() {
-    return 10;
+    let increment = numbers[i];
+    i += 1;
+    return increment;
 }
 
 function print(text) {
@@ -8,5 +13,6 @@ function print(text) {
 
 module.exports = {
     gets,
-    print
+    print,
+    numbers
 }
